@@ -9,6 +9,35 @@ export const types=[
     name:'podcast',
   },
 ]
+
+
+export const subcat= [
+  {
+    id: 401,
+    name: "پادکست انگیزشی",
+    slug: "motivation-podcast",
+    image: "/imgs/subcategories/motivation-podcast.jpg"
+  },
+  {
+    id: 402,
+    name: "پادکست علمی",
+    slug: "science-podcast",
+    image: "/imgs/subcategories/science-podcast.jpg"
+  },
+  {
+    id: 403,
+    name: "پادکست تاریخی",
+    slug: "history-podcast",
+    image: "/imgs/subcategories/history-podcast.jpg"
+  },
+  {
+    id: 404,
+    name: "پادکست کسب و کار",
+    slug: "business-podcast",
+    image: "/imgs/subcategories/business-podcast.jpg"
+  }
+]
+
 export const categories = [
   {
     id: 1,
@@ -109,34 +138,12 @@ export const categories = [
     image: "/imgs/categories/podcast.jpg",
     slug: "podcast",
     description: "مجموعه پادکست‌های متنوع",
-    subcategories: [
-      {
-        id: 401,
-        name: "پادکست انگیزشی",
-        slug: "motivation-podcast",
-        image: "/imgs/subcategories/motivation-podcast.jpg"
-      },
-      {
-        id: 402,
-        name: "پادکست علمی",
-        slug: "science-podcast",
-        image: "/imgs/subcategories/science-podcast.jpg"
-      },
-      {
-        id: 403,
-        name: "پادکست تاریخی",
-        slug: "history-podcast",
-        image: "/imgs/subcategories/history-podcast.jpg"
-      },
-      {
-        id: 404,
-        name: "پادکست کسب و کار",
-        slug: "business-podcast",
-        image: "/imgs/subcategories/business-podcast.jpg"
-      }
-    ]
+    subcategories:subcat,
+    
   }
 ]
+
+
 
 export const products = [
   {
@@ -413,6 +420,8 @@ export const products = [
     publish: "1404/01/20",
     shorttext: "بررسی مفاهیم فلسفی در زندگی روزمره",
     price: 9500,
+    category: 4,
+    subcategory: 402,
     img: "/imgs/podcast8.jpg",
     slug: "philosophy-podcast",
     type: "podcast",
@@ -464,6 +473,8 @@ export const products = [
     slug: "tech-podcast",
     type: "podcast",
     duration: "45:00",
+    category: 4,
+    subcategory: 401,
     episode: 1,
     audioFile: "/podcasts/tech-ep1.mp3",
     downloadLink: "/downloads/tech-ep1.mp3"
@@ -481,24 +492,6 @@ export const products = [
     category: "انگیزشی",
     tags: ["موفقیت", "رهبری", "انگیزشی"],
     hasAudio: true,
-    audioVersion: {
-      narrator: "رضا صدایی",
-      duration: "8:15:00",
-      audioFile: "/books/make-bed-audio.mp3",
-      downloadLink: "/downloads/make-bed-audio.mp3",
-      episodes: [
-        {
-          title: "درس اول - شروع روز",
-          duration: "40:00",
-          audioFile: "/books/make-bed/ep1.mp3"
-        },
-        {
-          title: "درس دوم - کار تیمی",
-          duration: "45:00",
-          audioFile: "/books/make-bed/ep2.mp3"
-        }
-      ]
-    }
   },
   {
     id: 16,
@@ -514,24 +507,6 @@ export const products = [
     subcategory: 101,
     tags: ["ادبیات معاصر", "رمان ایرانی", "داستان کوتاه"],
     hasAudio: true,
-    audioVersion: {
-      narrator: "بهروز رضوی",
-      duration: "4:30:00",
-      audioFile: "/books/buf-kur-audio.mp3",
-      downloadLink: "/downloads/buf-kur-audio.mp3",
-      episodes: [
-        {
-          title: "بخش اول",
-          duration: "35:00",
-          audioFile: "/books/buf-kur/ep1.mp3"
-        },
-        {
-          title: "بخش دوم",
-          duration: "40:00",
-          audioFile: "/books/buf-kur/ep2.mp3"
-        }
-      ]
-    }
   },
   {
     id: 17,
@@ -543,8 +518,8 @@ export const products = [
     img: "/imgs/podcast10.jpg",
     slug: "relationship-psychology-podcast",
     type: "podcast",
-    category: 1,
-    subcategory: 101,
+    category: 4,
+    subcategory: 401,
     duration: "50:00",
     episode: 1,
     audioFile: "/podcasts/relationship-ep1.mp3",
@@ -564,23 +539,5 @@ export const products = [
     subcategory: 101,
     tags: ["بازاریابی", "دیجیتال مارکتینگ", "کسب و کار"],
     hasAudio: true,
-    audioVersion: {
-      narrator: "مهدی صدایی",
-      duration: "9:15:00",
-      audioFile: "/books/marketing-audio.mp3",
-      downloadLink: "/downloads/marketing-audio.mp3",
-      episodes: [
-        {
-          title: "فصل اول - مبانی بازاریابی دیجیتال",
-          duration: "45:00",
-          audioFile: "/books/marketing/ep1.mp3"
-        },
-        {
-          title: "فصل دوم - شبکه‌های اجتماعی",
-          duration: "50:00",
-          audioFile: "/books/marketing/ep2.mp3"
-        }
-      ]
-    }
   }
 ]

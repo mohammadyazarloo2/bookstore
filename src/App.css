@@ -111,14 +111,14 @@ header{
 
 
 
-.cat{
+.cat,.products-index,.podcast-index{
   margin-top: 30px;
   margin: 20px;
   padding: 10px;
   border-radius: 6px;
   border: 1px solid #fff;
 }
-.cat-head{
+.cat-head,.products-head,.podcast-head{
   padding: 15px;
   display: flex;
   align-items: center;

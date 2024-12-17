@@ -10,6 +10,7 @@ import Details from "./pages/product/Details";
 import Tick from "./pages/ticket/Tick";
 import Products from "./pages/Products";
 import Category from "./pages/products/Category";
+import SubCategory from "./pages/products/SubCategory";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -22,6 +23,7 @@ root.render(
           <Route element={<Products />} path="/products" />
           <Route element={<Details />} path="/product/:slug" />
           <Route element={<Category />} path="/products/categories/:cat" />
+          <Route element={<SubCategory />} path="/products/categories/:cat/:subcat" />
           <Route element={<Tick />} path="/ticket/:id" />
         </Route>
       </Routes>

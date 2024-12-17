@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { categories, products } from "../../components/data/ProductsData";
+import { categories, products,subcat } from "../../components/data/ProductsData";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -70,7 +70,7 @@ export default function Category() {
                 {subcategories.map((item) => (
                   <SwiperSlide>
                     <Link
-                      to={`/products/categories/${item.slug}`}
+                      to={`/products/categories/${slug.cat}/${item.slug}`}
                       className="categories-content-item"
                       key={item.id}
                     >
